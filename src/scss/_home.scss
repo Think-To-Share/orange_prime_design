@@ -1,0 +1,116 @@
+// orange-second-hero-section
+.orange-second-hero-section{
+    padding: 60px 0 60px 0;
+    .tns-outer {
+        position: relative;
+        .tns-nav {
+            display: none;
+            justify-content: center;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            @media (min-width: 768px) {
+                display: flex;
+            }
+            button {
+                padding: 7px;
+                border: none;
+                background-color: #fcbaa2;
+                border-radius: 50%;
+                box-shadow: none;
+                margin-left: 20px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &.tns-nav-active {
+                    background-color: #f75b18;
+                }
+            }
+        }
+    }
+
+    .slider-container{
+        .slides-outer{
+            padding:60px 0 60px 0;
+            position: relative;
+                .rectangle-img{
+                    position: absolute;
+                    z-index: 3;
+                    &.rectangle-top-left{
+                        left: -5vw;
+                        top: calc(-5vw + 60px);
+                    }
+                    &.rectangle-bottom-right{
+                        right: -5vw;
+                        bottom: calc(-5vw + 60px);
+                    }
+                }
+            .slides{
+                .slide{
+                    
+                }
+            }
+        }  
+    }
+}
+
+// about-us-section
+.about-us-section{
+    padding: 30px 0;
+    .about-us-main{
+        padding-top: 90px;
+        .about-us-heading{
+            font-family: $secondary-font;
+            font-weight: 700;
+            color: #793009;
+            text-align: center;
+            font-size: 4em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .about-us-heading-bottom-text{
+            font-family: $secondary-font;
+            font-weight: 500;
+            color: #e56f41;
+            text-align: center;
+            font-size: 1.9em;
+            letter-spacing: 2px;
+            padding-bottom: 20px;
+        }
+        .about-us-text{
+            color: #010101;
+            font-family: $primary-font;
+            font-family: 500;
+            font-size: 1.2em;
+            text-align: left;
+            line-height: 2;
+        }
+        .about-btn-container{
+            text-align: center;
+            width: 100%;
+            margin-top: 44px;
+            .about-btn{
+                text-decoration: none;
+                text-align: center;
+                color: #ffffff;
+                background-color: #fa5600;
+                font-size: 1.5em;
+                padding: 6px 29px;
+                display: inline-block;
+                font-family: $primary-font;
+                font-weight: 500;
+                border-radius: 37px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: #9b3b08;
+                    color: #fff;
+                   
+                }
+            }
+        }
+    }
+    .about-img{
+        width: 100%;
+    }
+}
