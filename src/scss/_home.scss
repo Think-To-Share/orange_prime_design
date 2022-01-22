@@ -114,3 +114,161 @@
         width: 100%;
     }
 }
+
+// icon section
+.icon-section{
+    background-color: $primary-color;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .col{
+        padding: 38px 0;
+        .icon-img{
+            width: 61%;
+            display: block;
+            margin: 0 auto;
+        }   
+    }
+}
+
+// client section
+.client-section{
+    margin-bottom: 63px;
+    margin-top: 114px;
+    .tns-outer {
+        position: relative;
+        .tns-nav {
+            display: none;
+            justify-content: center;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            @media (min-width: 768px) {
+                display: flex;
+            }
+            button {
+                padding: 7px;
+                border: none;
+                background-color: change-color($color: $primary-color, $alpha: 0.5);
+                border-radius: 50%;
+                box-shadow: none;
+                margin-left: 20px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &.tns-nav-active {
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+    .slides-container{
+        box-shadow:1px 1px 17px 8px #d5d5d5;
+        background-image: url(../images/client-img-jp.jpg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 31%;
+        padding: 70px 30px;
+        .slides{
+            .slide{
+                .slide-main{
+                    display: flex;
+                    align-items: center;
+                    .image-container{
+                        width: 28%; 
+                        display: flex;
+                        align-items: center;
+                        .client-image{
+                              width: 100%;                                                                     
+                        }
+                    } 
+                    .client-text{
+                        font-family: $primary-font;
+                        font-weight: 500;
+                        font-size: 1.4em;
+                        color: #444443;
+                        text-align: center;
+                        letter-spacing: 2px;
+                        margin: 0;
+                        span{
+                            color: #a94904;
+                            font-family: $primary-font;
+                            font-weight: 700;
+                            font-size: 1.5em;
+                            padding-top: 48px;
+                            display: inline-block;
+                        }
+                    }
+                }   
+            }
+        }
+        
+    }
+}
+
+// story to share section start
+.story-share-section{
+    padding-bottom: 50px;
+    .tns-outer{
+        position: relative;
+        .tns-controls{
+                position: absolute;
+                z-index: 3;
+                transform: translate(-50% ,-50%);
+                top: 50%;
+                width: calc(100% + 121px);
+                display: flex;
+                justify-content: space-between;
+                left: 50%;
+            button{
+                background: none;
+                border: none;
+                box-shadow: none;
+                outline: none;
+                i{
+                    color: $primary-color;
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+    .activites-heading{
+        color: #78310d;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 2.6em;
+        text-align: center;
+        margin-bottom: 57px;
+    }
+    .slides{
+        .slide{
+            .story-main{
+                .image-container{
+                    img{
+                        
+                    }
+                }
+                .story-text{
+                    position: relative;
+                    background-color: change-color($color: #fff,$alpha: 0.9);
+                    z-index: 3;
+                    padding: 15px 15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: calc(100% - 20px);
+                    bottom: 68px;
+                    box-shadow: 0px 3px 6px #00000059;
+                    margin: 0;
+                    .para-text{
+                        text-align: center;
+                        color: #020202;
+                        font-family: $primary-font;
+                        font-weight: 400;
+                        font-style: italic;
+                        font-size: 1.5em;  
+                    }
+                }
+            }
+        }
+    }
+}
