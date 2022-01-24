@@ -1,6 +1,85 @@
+// banner section start
+.orange-banner-section{
+    // background-color: $primary-color;
+    background-image: url(../images/white-bannerl_02.png),url(../images/orange-premium-site-banner.jpg) ;
+    background-position: bottom left , top left;
+    background-size: contain , 100% 100%;
+    padding-bottom: 27px;
+    background-repeat: no-repeat;
+    padding-top: 57px;
+    position: relative;
+    .orange-banner-text{
+        width: 50%;
+        text-align: center;
+        .orange-banner-first-text{
+            margin: 0;
+            padding: 0;
+            color: #7a2601;
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .orange-book-name{
+            font-family: $secondary-font;
+            font-weight: 700;
+            font-size: 6.5em;
+            color: #f5f5f5;
+            text-shadow: -5px -3px 10px #c82500;
+        }
+        .orange-book-discount-text{
+            font-family: $primary-font;
+            font-weight: 400;
+            color: #030303;
+            font-size: 1.9em;
+            text-shadow: -1px -2px 3px #8b2d02;
+            font-style: italic;
+            margin-bottom: 110px;
+            span:first-child{
+                font-size: 1.7em;
+                text-shadow: -1px -4px 3px #8b2d02;
+            }
+            span:nth-child(2){
+                color: #fce7d1;
+            }    
+        }
+        .banner-btn-container{
+            text-align: center;
+            width: 100%;
+            margin-top: 44px;
+            .banner-btn{
+                text-decoration: none;
+                text-align: center;
+                color: #ffffff;
+                background-color: #000000;
+                font-size: 1.5em;
+                padding: 6px 29px;
+                display: inline-block;
+                font-family: $primary-font;
+                font-weight: 500;
+                border-radius: 37px;
+                transition: all 0.3s ease-in-out;
+                // &:hover{
+                //     background-color: #9b3b08;
+                //     color: #fff;
+                    
+                // }
+            }
+        }
+    }
+    .book-image{
+        position: absolute;
+        top: 34px;
+        right: 91px;
+        .book-img{
+            width: 72%;
+        }
+    }
+}
+
 // orange-second-hero-section
 .orange-second-hero-section{
-    padding: 60px 0 60px 0;
+    padding: 202px 0 60px 0; 
     .tns-outer {
         position: relative;
         .tns-nav {
@@ -53,6 +132,7 @@
             }
         }  
     }
+   
 }
 
 // about-us-section
