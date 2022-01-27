@@ -58,21 +58,24 @@
                 font-family: $primary-font;
                 font-weight: 500;
                 border-radius: 37px;
+                border:1px solid #000000;
                 transition: all 0.3s ease-in-out;
-                // &:hover{
-                //     background-color: #9b3b08;
-                //     color: #fff;
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
                     
-                // }
+                }
             }
         }
     }
     .book-image{
         position: absolute;
-        top: 34px;
-        right: 91px;
+        // top: 34px;
+        // right: 91px;
+        top: 25px;
+        right: 120px;
         .book-img{
-            width: 72%;
+            width: 80%;
         }
     }
 }
@@ -183,7 +186,7 @@
                 border-radius: 37px;
                 transition: all 0.3s ease-in-out;
                 &:hover{
-                    background-color: #9b3b08;
+                    background-color: #d74a00;
                     color: #fff;
                    
                 }
@@ -192,6 +195,59 @@
     }
     .about-img{
         width: 100%;
+    }
+}
+
+// more-author-section
+.more-author-section{
+    .tns-outer{
+        position: relative;
+        .tns-controls{
+                position: absolute;
+                z-index: 3;
+                transform: translate(-50% ,-48%);
+                top: 50%;
+                width: calc(100% + 262px);
+                display: flex;
+                justify-content: space-between;
+                left: 48%;
+            button{
+                background: none;
+                // border: none;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                box-shadow: none;
+                outline: none;
+                border:3px solid $primary-color;
+                i{
+                    color: #000000;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    .more-author-heading{
+        text-align: center;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 2.5em;
+        color: #783110;
+        margin-bottom: 56px;
+    }
+    .image-container{
+        background-color: #010101;
+        // height: 249px;
+        width: 87%;
+        border-top-left-radius: 77px;
+        border-top-right-radius: 44px;
+        border-bottom-right-radius: 77px;
+        border-bottom-left-radius: 44px;
+        // box-shadow: -2px -1px 11px 9px #b5afa9bd;
+        overflow: hidden;
+      .orange-author-img{
+          width: 100%;
+      }
     }
 }
 
@@ -210,6 +266,90 @@
     }
 }
 
+// award-book-section
+.award-book-section{
+    padding: 43px 0;
+    .award-book-img{
+        width: 100%;
+    }
+    .award-book-main{
+        .award-book-heading{
+            text-align: center;
+            font-family: $secondary-font;
+            font-weight: 700;
+            color: #773213;
+            font-size: 2.5em;
+            margin-bottom: 27px;
+            margin-top: 8px;
+        }
+        .award-book-contain{
+            background-color: #ffe7de;
+            padding: 20px;
+            border-left:8px solid #de7651;
+            border-bottom: 8px solid #de7651;
+            box-shadow:-2px 6px 12px 3px #ac8c8196;
+            .award-book-heading-bottom-text{
+                color: #773213;
+                text-align: center;
+                font-family: $primary-font;
+                font-weight: 500;
+                font-size: 1.4em;
+               
+            }
+            .read-more-btn{
+                text-align: right;
+                .award-book-link{
+                    text-decoration: none;
+                    color: $primary-color;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    font-size: 1em;
+                }
+            }
+           
+        }  
+    }
+}
+
+// contact us
+.contact-us-section{
+    background-color: $primary-color;
+    .contact-us-text{
+        .contact-text{
+            margin: 0;
+            padding: 10px 0 0 0;
+            text-align: center;
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 3.1em;
+            color: #ffffff;
+        }
+        .contact-second-text{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 3.1em;
+            color: #ffffff;
+        }
+        a{
+            text-decoration: none;
+            .contact-us{
+                color: #fad1ac;
+                font-family: $primary-font;
+                font-weight: 700;
+                font-size: 2em;
+                text-align: center;
+                padding: 10px 0 8px 0;
+                text-shadow: 1px 5px 3px #8b2d02;
+            }
+        }
+       
+    }
+}
 // client section
 .client-section{
     margin-bottom: 63px;
@@ -279,15 +419,46 @@
                             display: inline-block;
                         }
                     }
-                }   
+                } 
             }
         }
         
     }
 }
 
+// check-out-section
+.check-out-section{
+    background-color: $primary-color;
+    .check-out-main{
+        .check-out-text{
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 3em;
+            font-style: italic;
+            color: #fefdfd;
+            text-align: center;
+            letter-spacing: 5px;
+            padding-top: 30px;
+        }
+        a{
+            text-decoration: none;
+            .check-out{
+                color: #fad1ac;
+                font-family: $primary-font;
+                font-weight: 700;
+                font-size: 2em;
+                text-align: center;
+                padding-bottom: 20px;
+                text-shadow: 1px 4px 3px #8b2d02c7;
+            }
+        }
+    }
+}
+
+
 // story to share section start
 .story-share-section{
+    padding-top: 50px;
     padding-bottom: 50px;
     .tns-outer{
         position: relative;

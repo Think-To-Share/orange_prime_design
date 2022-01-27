@@ -25,6 +25,20 @@ if (document.querySelector('.client-section')) {
     })
 }
 
+if (document.querySelector('.more-author-section')) {
+    tns({
+        container: '.more-author-section .slides',
+        items: 3,
+        nav: false,
+        gutter:30,
+        autoplay: true,
+        controls:true,
+        autoplayTimeout:3000,
+        autoplayButtonOutput: false,
+        controlsText:['<i class="fas fa-chevron-left"></i>' , '<i class="fas fa-chevron-right"></i>']
+    })
+}
+
 if (document.querySelector('.story-share-section')) {
     tns({
         container: '.story-share-section .slides',
