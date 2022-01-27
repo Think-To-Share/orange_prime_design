@@ -1,9 +1,33 @@
 .orange-header-menu{
-    background-color: #444444;
-    .header-main{
-        display: flex;
-        align-items: center;
-        padding: 0 77px;
+        .logo-side{
+
+        }
+        .search-bar{
+            form{
+                position: relative;
+                input{
+                    width: 100%;
+                    padding-right: 50px;
+                    font-family: $primary-font;
+                    font-weight: 500;
+                    font-size: 0.9em;
+                    color: #969494;
+                    padding: 8px 10px;
+                    border: 1px solid #000;
+                    outline: none;
+                    padding-right: 40px;
+                }
+                i{
+                  position:absolute; 
+                  right: 10px;
+                  top: 11px; 
+                
+                }
+            } 
+        }
+    .header-bottom-main{
+        display: none;
+        
         .orange-menu-side{
             width: 100%;
             flex-grow: 1;
@@ -53,6 +77,12 @@
                 //     display: inline-block;
                 // }
             }
-        }   
+        }  
+        @media (min-width: 768px){
+            background-color: #444444;
+            display: flex;
+            align-items: center;
+            padding: 0 77px;
+        } 
     }
 }
