@@ -8,10 +8,14 @@
     background-repeat: no-repeat;
     padding-top: 57px;
     position: relative;
-   
+   overflow: hidden;
     .orange-banner-text{
-        width: 50%;
+        width: 100%;
         text-align: center;
+        @media (min-width: 992px){
+            width: 50%;
+            text-align: center;
+        }  
         .orange-banner-first-text{
             margin: 0;
             padding: 0;
@@ -31,7 +35,7 @@
             //     font-size: 4em;
             // }
             @media (min-width: 1200px){
-                font-size: 6.5em;
+                font-size: 5em;
             }
         }
         .orange-book-discount-text{
@@ -58,7 +62,7 @@
                 text-decoration: none;
                 text-align: center;
                 color: #ffffff;
-                background-color: #000000;
+                background-color: #000;
                 font-size: 1.5em;
                 padding: 6px 29px;
                 display: inline-block;
@@ -77,18 +81,17 @@
     }
     .book-image{
         position: absolute;
-        // top: 34px;
-        // right: 91px;
-        @media (min-width: 992px){
-            top: 16px;
-            right: -266px;
-        } 
+        top: 52px;
+        right: -289px;
         @media (min-width: 1200px){
-            top: 25px;
-        right: 120px;
-        }
+            top: 39px;
+            right: -247px;
+        } 
         .book-img{
-            width: 80%;
+            width: 59%;
+            @media (min-width: 1200px){
+                width: 63%;
+            }
         }
         display: none;
         @media (min-width: 992px){
@@ -99,8 +102,8 @@
 
 // orange-second-hero-section
 .orange-second-hero-section{
-    padding: 200px 0 0px 0;
-    @media (min-width: 768px) {
+    padding: 60px 0 0px 0;
+    @media (min-width: 992px) {
         padding: 202px 0 60px 0;
     }
     .tns-outer {
@@ -356,10 +359,11 @@
     }
     .award-book-img{
         width: 100%;
+        display: none;
         // padding-top: 20px; 
-        // @media (min-width:768px){
-        //     padding-top:0; 
-        // }
+        @media (min-width:992px){
+           display: block;
+        }
     }
     .award-book-main{
         .award-book-heading{
@@ -372,6 +376,15 @@
             margin-top: 8px;
             @media (min-width:768px){
                 font-size: 2.5em; 
+            }
+            
+        }
+        .award-book-second-img{
+            width: 100%;
+            margin-bottom: 23px;
+            display: block;
+            @media(min-width:992px) {
+                display: none;
             }
         }
         .award-book-contain{
@@ -450,7 +463,7 @@
                 font-size: 1.5em;
                 text-align: center;
                 padding: 10px 0 8px 0;
-                text-shadow: 1px 5px 3px #8b2d02;
+                text-shadow: 1px 4px 3px #8b2d02c7;
                 transition: all 0.3s ease-in-out;
                 &:hover{
                     text-shadow: 1px 2px 3px #8b2d02;
@@ -576,6 +589,10 @@
         text-transform: uppercase;
         font-size: 1.4em;
         color: #fa5600;
+        display: none;
+        @media (min-width: 1200px){
+            display: block;
+        }
     }
 
     .check-out-main{
@@ -641,6 +658,10 @@
                 i{
                     color: $primary-color;
                     font-size: 2.5em;
+                    display: none;
+                    @media (min-width: 992px){
+                        display: block;
+                    }
                 }
             }
         }
@@ -704,9 +725,41 @@
                 font-size: 2em;
                 color: #030303;
                 padding-left: 37px;
+
                 @media (min-width: 768px){
                     font-size: 4em;
                     padding-left: 75px;
+                }
+                
+            }
+            .fa-instagram{
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: 	#E1306C;
+                }
+            }
+            .fa-facebook-square{
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: #4267B2;
+                }
+            }
+            .fa-twitter{
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: #1DA1F2;
+                }
+            }
+            .fa-youtube{
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: #FF0000;
+                }
+            }
+            .fa-linkedin{
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: #0e76a8;
                 }
             }
         }

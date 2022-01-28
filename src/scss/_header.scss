@@ -4,9 +4,13 @@
         display: block;
     }
         .logo-side{
-
+            display: none;
+            @media (min-width: 768px){
+                display: block;
+            }
         }
         .search-bar{
+            display: none;
             form{
                 position: relative;
                 input{
@@ -28,6 +32,28 @@
                 
                 }
             } 
+            @media (min-width: 992px){
+                display: block;
+            }
+        }
+        .call-btn-site{
+            .number-text{
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #ffffff;
+                font-family: $primary-font;
+                font-weight: 600;
+                font-size: 1em;
+                background-color: $primary-color;
+                display: inline-block;
+                white-space: nowrap;
+                i{
+                    color: #ffffff;
+                }
+                @media (min-width: 992px){
+                    display: none;
+                }
+            }
         }
     .header-bottom-main{
         display: none;
@@ -72,7 +98,7 @@
                 font-weight: 600;
                 font-size: 1em;
                 background-color: $primary-color;
-                display: inline-block;
+                display: none;
                 white-space: nowrap;
                 i{
                     color: #ffffff;
@@ -80,6 +106,9 @@
                 // span{
                 //     display: inline-block;
                 // }
+                @media (min-width: 992px){
+                    display: inline-block;
+                }
             }
         }  
         @media (min-width: 768px){
