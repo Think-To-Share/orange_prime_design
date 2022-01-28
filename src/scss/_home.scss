@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     padding-top: 57px;
     position: relative;
+   
     .orange-banner-text{
         width: 50%;
         text-align: center;
@@ -23,9 +24,15 @@
         .orange-book-name{
             font-family: $secondary-font;
             font-weight: 700;
-            font-size: 6.5em;
+            font-size: 4em;
             color: #f5f5f5;
             text-shadow: -5px -3px 10px #c82500;
+            // @media (min-width: 992px){
+            //     font-size: 4em;
+            // }
+            @media (min-width: 1200px){
+                font-size: 6.5em;
+            }
         }
         .orange-book-discount-text{
             font-family: $primary-font;
@@ -72,17 +79,30 @@
         position: absolute;
         // top: 34px;
         // right: 91px;
-        top: 25px;
+        @media (min-width: 992px){
+            top: 16px;
+            right: -266px;
+        } 
+        @media (min-width: 1200px){
+            top: 25px;
         right: 120px;
+        }
         .book-img{
             width: 80%;
+        }
+        display: none;
+        @media (min-width: 992px){
+            display: block;
         }
     }
 }
 
 // orange-second-hero-section
 .orange-second-hero-section{
-    padding: 202px 0 60px 0; 
+    padding: 200px 0 0px 0;
+    @media (min-width: 768px) {
+        padding: 202px 0 60px 0;
+    }
     .tns-outer {
         position: relative;
         .tns-nav {
@@ -117,6 +137,7 @@
             padding:60px 0 60px 0;
             position: relative;
                 .rectangle-img{
+                    display: none;
                     position: absolute;
                     z-index: 3;
                     &.rectangle-top-left{
@@ -126,6 +147,9 @@
                     &.rectangle-bottom-right{
                         right: -5vw;
                         bottom: calc(-5vw + 60px);
+                    }
+                    @media (min-width: 992px){
+                        display: block;
                     }
                 }
             .slides{
@@ -142,37 +166,58 @@
 .about-us-section{
     padding: 30px 0;
     .about-us-main{
-        padding-top: 90px;
+        padding-top: 0;
+        @media (min-width: 768px){
+            padding-top: 90px;
+        }
         .about-us-heading{
             font-family: $secondary-font;
             font-weight: 700;
             color: #793009;
             text-align: center;
-            font-size: 4em;
+            font-size: 2.3em;
             letter-spacing: 3px;
+            margin-top: 20px;
             text-transform: uppercase;
+            @media (min-width: 992px){
+                font-size: 3.8em;   
+            }
+            @media (min-width: 768px){
+                margin-top: 0; 
+            }
         }
         .about-us-heading-bottom-text{
             font-family: $secondary-font;
             font-weight: 500;
             color: #e56f41;
             text-align: center;
-            font-size: 1.9em;
+            font-size: 1.3em;
             letter-spacing: 2px;
             padding-bottom: 20px;
+            @media (min-width: 992px){
+                font-size: 1.9em;
+            }
         }
         .about-us-text{
             color: #010101;
             font-family: $primary-font;
-            font-family: 500;
-            font-size: 1.2em;
-            text-align: left;
+            font-weight: 500;
+            font-size: 1em;
+            text-align: center;
             line-height: 2;
+            @media (min-width:992px){
+                text-align: left;
+                font-size: 1.2em;
+            }
         }
         .about-btn-container{
             text-align: center;
             width: 100%;
-            margin-top: 44px;
+            margin-top: 30px;
+            margin-bottom: 33px;
+            @media (min-width:768px){
+                margin-top: 44px;
+            } 
             .about-btn{
                 text-decoration: none;
                 text-align: center;
@@ -194,7 +239,13 @@
         }
     }
     .about-img{
-        width: 100%;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        @media (min-width: 768px){
+            width: 100%;
+            display: initial;
+        }
     }
 }
 
@@ -286,19 +337,29 @@
     .col{
         padding: 38px 0;
         .icon-img{
-            width: 61%;
+            width: 87%;
             display: block;
             margin: 0 auto;
             filter: drop-shadow(2px 4px 6px #92260b);
+            @media (min-width:768px){
+                width: 61%;
+            }
         }   
     }
 }
 
 // award-book-section
 .award-book-section{
-    padding: 43px 0;
+    padding:0;
+    @media (min-width:768px){
+        padding: 43px 0; 
+    }
     .award-book-img{
         width: 100%;
+        // padding-top: 20px; 
+        // @media (min-width:768px){
+        //     padding-top:0; 
+        // }
     }
     .award-book-main{
         .award-book-heading{
@@ -306,9 +367,12 @@
             font-family: $secondary-font;
             font-weight: 700;
             color: #773213;
-            font-size: 2.5em;
+            font-size: 2em;
             margin-bottom: 27px;
             margin-top: 8px;
+            @media (min-width:768px){
+                font-size: 2.5em; 
+            }
         }
         .award-book-contain{
             background-color: #ffe7de;
@@ -316,24 +380,31 @@
             border-left:8px solid #de7651;
             border-bottom: 8px solid #de7651;
             box-shadow:-2px 6px 12px 3px #ac8c8196;
+            margin-bottom: 30px;
+            @media (min-width:768px){
+                margin-bottom: 0;
+            }
             .award-book-heading-bottom-text{
                 color: #773213;
                 text-align: center;
                 font-family: $primary-font;
                 font-weight: 500;
-                font-size: 1.4em;
+                font-size: 1em; 
+                @media (min-width:768px){
+                    font-size: 1.4em;
+                }
                
             }
-            .read-more-btn{
-                text-align: right;
-                .award-book-link{
-                    text-decoration: none;
-                    color: $primary-color;
-                    font-family: $primary-font;
-                    font-weight: 600;
-                    font-size: 1em;
-                }
-            }
+            // .read-more-btn{
+            //     text-align: right;
+            //     .award-book-link{
+            //         text-decoration: none;
+            //         color: $primary-color;
+            //         font-family: $primary-font;
+            //         font-weight: 600;
+            //         font-size: 1em;
+            //     }
+            // }
            
         }  
     }
@@ -351,8 +422,11 @@
             font-family: $secondary-font;
             font-weight: 400;
             font-style: italic;
-            font-size: 3.1em;
+            font-size: 1.7em;
             color: #ffffff;
+            @media (min-width: 768px){
+                font-size: 3.1em;
+            }
         }
         .contact-second-text{
             margin: 0;
@@ -361,8 +435,11 @@
             font-family: $secondary-font;
             font-weight: 400;
             font-style: italic;
-            font-size: 3.1em;
+            font-size: 1.7em;
             color: #ffffff;
+            @media (min-width: 768px){
+                font-size: 3.1em;
+            }
         }
         a{
             text-decoration: none;
@@ -370,13 +447,16 @@
                 color: #fad1ac;
                 font-family: $primary-font;
                 font-weight: 700;
-                font-size: 2em;
+                font-size: 1.5em;
                 text-align: center;
                 padding: 10px 0 8px 0;
                 text-shadow: 1px 5px 3px #8b2d02;
                 transition: all 0.3s ease-in-out;
                 &:hover{
                     text-shadow: 1px 2px 3px #8b2d02;
+                }
+                @media (min-width: 768px){
+                    font-size: 2em;
                 }
             }
         }
@@ -425,12 +505,22 @@
         .slides{
             .slide{
                 .slide-main{
-                    display: flex;
-                    align-items: center;
-                    .image-container{
-                        width: 28%; 
+                    display: block;
+                    
+                    @media (min-width: 992px){
                         display: flex;
                         align-items: center;
+                    }
+                    
+                    .image-container{
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+                        margin: 0 auto;
+                        @media (min-width: 992px){
+                            width: 28%;
+                            margin: 0;
+                        }
                         .client-image{
                               width: 100%;                                                                     
                         }
@@ -438,18 +528,24 @@
                     .client-text{
                         font-family: $primary-font;
                         font-weight: 500;
-                        font-size: 1.4em;
+                        font-size: 1em;
                         color: #444443;
                         text-align: center;
                         letter-spacing: 2px;
                         margin: 0;
+                        @media (min-width: 768px){
+                            font-size: 1.4em;
+                        }
                         span{
                             color: #a94904;
                             font-family: $primary-font;
                             font-weight: 700;
-                            font-size: 1.5em;
+                            font-size: 1.3em;
                             padding-top: 48px;
                             display: inline-block;
+                            @media (min-width: 768px){
+                                font-size: 1.5em;
+                            }
                         }
                     }
                 } 
@@ -467,12 +563,15 @@
         .check-out-text{
             font-family: $secondary-font;
             font-weight: 400;
-            font-size: 3em;
+            font-size: 1.7em;
             font-style: italic;
             color: #fefdfd;
             text-align: center;
             letter-spacing: 5px;
             padding-top: 30px;
+            @media (min-width: 768px){
+                font-size: 3em;
+            }
         }
         a{
             text-decoration: none;
@@ -480,13 +579,16 @@
                 color: #fad1ac;
                 font-family: $primary-font;
                 font-weight: 700;
-                font-size: 2em;
+                font-size: 1.5em;
                 text-align: center;
                 padding-bottom: 20px;
                 text-shadow: 1px 4px 3px #8b2d02c7;
                 transition: all 0.3s ease-in-out;
                 &:hover{
                     text-shadow: 1px 2px 3px #8b2d02c7;
+                }
+                @media (min-width: 768px){
+                    font-size: 2em;
                 }
             }
         }
@@ -497,7 +599,10 @@
 // story to share section start
 .story-share-section{
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
+    @media (min-width: 768px){
+        padding-bottom: 50px;
+    }
     .tns-outer{
         position: relative;
         .tns-controls{
@@ -525,9 +630,12 @@
         color: #78310d;
         font-family: $secondary-font;
         font-weight: 400;
-        font-size: 2.6em;
+        font-size: 2em;
         text-align: center;
         margin-bottom: 57px;
+        @media (min-width: 768px){
+            font-size: 2.6em;
+        }
     }
     .slides{
         .slide{
@@ -541,20 +649,27 @@
                     position: relative;
                     background-color: change-color($color: #fff,$alpha: 0.9);
                     z-index: 3;
-                    padding: 15px 15px;
+                    padding: 0 10px;
                     left: 50%;
                     transform: translateX(-50%);
                     width: calc(100% - 20px);
-                    bottom: 68px;
+                    bottom: 23px;
                     box-shadow: 0px 3px 6px #00000059;
                     margin: 0;
+                    @media (min-width: 768px){
+                        bottom: 68px;
+                        padding: 15px 15px;
+                    }
                     .para-text{
                         text-align: center;
                         color: #020202;
                         font-family: $primary-font;
                         font-weight: 400;
                         font-style: italic;
-                        font-size: 1.5em;  
+                        font-size: 0.9em; 
+                        @media (min-width: 768px){
+                            font-size: 1.5em; 
+                        } 
                     }
                 }
             }
@@ -569,7 +684,7 @@
             i{
                 font-size: 2em;
                 color: #030303;
-                padding-left: 50px;
+                padding-left: 37px;
                 @media (min-width: 768px){
                     font-size: 4em;
                     padding-left: 75px;

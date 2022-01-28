@@ -42,13 +42,19 @@ if (document.querySelector('.more-author-section')) {
 if (document.querySelector('.story-share-section')) {
     tns({
         container: '.story-share-section .slides',
-        items: 3,
+        items: 2,
         nav: false,
         gutter:25,
         autoplay: true,
-        controls:true,
+        controls:false,
         autoplayTimeout:3000,
         autoplayButtonOutput: false,
-        controlsText:['<i class="fas fa-chevron-left"></i>' , '<i class="fas fa-chevron-right"></i>']
+        controlsText:['<i class="fas fa-chevron-left"></i>' , '<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            768:{
+            items: 3,
+            controls:true,
+            },
+        }
     })
 }
