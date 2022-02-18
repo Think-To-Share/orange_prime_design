@@ -28,14 +28,24 @@ if (document.querySelector('.client-section')) {
 if (document.querySelector('.more-author-section')) {
     tns({
         container: '.more-author-section .slides',
-        items: 3,
+        items: 1,
         nav: false,
         gutter:30,
         autoplay: true,
-        controls:true,
+        controls:false,
         autoplayTimeout:3000,
         autoplayButtonOutput: false,
-        controlsText:['<i class="fas fa-chevron-left"></i>' , '<i class="fas fa-chevron-right"></i>']
+        controlsText:['<i class="fas fa-chevron-left"></i>' , '<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            576:{
+            items: 2,
+            controls:false,
+            },
+            992:{
+            items: 3,
+            controls:true,
+            },
+        }
     })
 }
 
@@ -56,5 +66,28 @@ if (document.querySelector('.story-share-section')) {
             controls:true,
             },
         }
+    })
+}
+
+if (document.querySelector('.award-book-section')) {
+    tns({
+        container: '.award-book-section .slides1',
+        items: 1,
+        nav: true,
+        gutter:25,
+        autoplay: true,
+        controls:false,
+        autoplayTimeout:3000,
+        autoplayButtonOutput: false,
+    })
+    tns({
+        container: '.award-book-section .slides2',
+        items: 1,
+        nav: true,
+        gutter:25,
+        autoplay: true,
+        controls:false,
+        autoplayTimeout:3000,
+        autoplayButtonOutput: false,
     })
 }
