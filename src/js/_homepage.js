@@ -87,7 +87,7 @@ if (document.querySelector('.award-book-section')) {
         gutter:25,
         autoplay: true,
         controls:false,
-        autoplayTimeout:3000,
+        autoplayTimeout:5000,
         autoplayButtonOutput: false,
     })
 }

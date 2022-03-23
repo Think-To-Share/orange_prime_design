@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange_prime</title>
+    <link rel="stylesheet" href="./dist/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="orange-header-menu"> 
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-4">
+                    <div class="logo-side">
+                        <img src="./src/images/logo(final).png" alt="Site Logo"  class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="search-bar">
+                        <form action="">
+                            <input type="text" placeholder="Enter Search Your Key"  name="search2"><i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                    <div class="call-btn-site">
+                        <a href="tel:+919830330809" class="number-text"><i class="fas fa-phone-volume"></i> +91 9830330809 / +91 9830050132 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-main">
+            <div class="orange-menu-side">
+                <ul>
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">SERVICES</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Lorem ipsum</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li>
+                                        <a href="#">Lorem ipsum</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                            <li>
+                                                <a href="#">Lorem ipsum</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="#">Lorem ipsum</a></li>
+                                                    <li><a href="#">Lorem ipsum</a></li>
+                                                    <li><a href="#">Lorem ipsum</a></li>
+                                                    <li><a href="#">Lorem ipsum</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">AUTHOR CHECKLIST</a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    
+                </ul>   
+            </div>
+            <div class="call-btn-site">
+                <a href="tel:+919830330809" class="number-text"><i class="fas fa-phone-volume"></i> +91 9830330809 / +91 9830050132 </a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <section class="page-hero-section">
+            <div class="img-bg" style="background-image: url(./src/images/download.jpg);">
+                <h1 class="hero-heading">AUTHOR'S CHECKLIST</h1>
+            </div>
+        </section>
+        <section class="service-page-top-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-heading">
+                            <h2 class="main-heading">What does ORANGE PUBLISHERS Easy Publishing mean?</h2>
+                        </div>
+                        <div class="text">
+                            <p>Okay now … your manuscript is ready for us to start working on, you have compared the various packages offered by Orange Publishers and made your choice, and you have gone through our FAQs section in great detail. Just before you submit your manuscript to our office, it would be a good idea to run through the following check-list of a few simple Do's and Don'ts.</p>  
+                            <h3>Adhering to this check-list will save you (and us) a great deal of time, while we publish your book! So, here it goes:</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="do-and-dont">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="do-and-dont-container" x-data="{do_open:true}">
+                            <div class="do-and-dont-header">
+                                <a href="#" x-bind:class="{active:do_open}" @click.prevent="do_open=true">Do's</a>
+                                <a href="#" x-bind:class="{active:!do_open}" @click.prevent="do_open=false">Don'ts</a>
+                            </div>
+                            <!-- Detail of Do -->
+                            <div class="do-and-dont-body" x-bind:class="{active:do_open}" >
+                                <div class="text">
+                                    <span>1</span>
+                                    <p>Send your manuscript either in MS-Word (ver. 97, 2003, 2007, 2010, 2013) or PageMaker (ver 6.5 or above).</p>
+                                </div>
+                                <div class="text">
+                                    <span>2</span>
+                                    <p>Mention author's name in your manuscript. If you wish to have a pen-name (not your real name) in the published title, please mention that clearly in the manuscript as well as in the email.</p>
+                                </div>
+                                <div class="text">
+                                    <span>3</span>
+                                    <p>Mention *one* email address instead of many for correspondence. If you mail us from different email ids at different points of time there will be a chance of missing valuable information and instructions. Using one email id always is strongly recommended.</p>
+                                </div>
+                                <div class="text">
+                                    <span>4</span>
+                                    <p>Mention your postal address where you want the book's complimentary copies to be delivered, and the address to be put on your complimentary visiting cards as well.</p>
+                                </div>
+                                <div class="text">
+                                    <span>5</span>
+                                    <p>Please mention your contact number (preferably mobile phone number) so that we can reach you at any point of time easily.</p>
+                                </div>
+                                <div class="text">
+                                    <span>6</span>
+                                    <p>Please keep us informed of any change in your contact number or email addresses.</p>
+                                </div>
+                                <div class="text">
+                                    <span>7</span>
+                                    <p>Include 100-150 words write-up on "About the Author".</p>
+                                </div>
+								 <div class="text">
+                                    <span>8</span>
+                                    <p>Include 100-150 words write-up on "About the Book".</p>
+                                </div>
+                                <div class="text">
+                                    <span>9</span>
+                                    <p>Send us a photograph of the Author, where her/his face is visible clearly (to be put on the back cover of the book). The file size of this image should be within 8 MB Maximum, in JPEG/JPG/GIF/TIFF/BMP/PNG formats only.</p>
+                                </div>
+								<div class="text">
+                                    <span>10</span>
+                                    <p>If your manuscript contains any special font, please send us the font file (ttf/otf).</p>
+                                </div>
+								<div class="text">
+                                    <span>11</span>
+                                    <p>If your manuscript contains Prose, mention chapter headings and sub-headings clearly in your manuscript.</p>
+                                </div>
+								<div class="text">
+                                    <span>12</span>
+                                    <p>If your manuscript contains Poetry, mention the poetry titles clearly in your manuscript.</p>
+                                </div>
+								<div class="text">
+                                    <span>13</span>
+                                    <p>Apply BOLD and ITALICs in the manuscript only where you need them.</p>
+                                </div>
+								<div class="text">
+                                    <span>14</span>
+                                    <p>Try to send the entire manuscript in a single file. Avoid sending your manuscript in parts, unless there is a very compelling reason to do so.<p>
+                                </div>
+								<div class="text">
+                                    <span>15</span>
+                                    <p>Proofreading of your manuscript is recommended (note: Proofreading is not included in Jasmine and Rose packages) unless you are opting for our Value-Added Proofreading or Editorial services.</p>
+                                </div>
+								<div class="text">
+                                    <span>16</span>
+                                    <p>If you want to send any pictures/photos/images to us, please send us the images in JPG/JPEG, PNG or TIF formats. Firstly, read up our FAQ on copyright-free images. Secondly, some important points to be noted here:</p>
+
+                                    <ul>
+                                        <li>
+                                            For producing any art/drawing inside your manuscript, Microsoft Word's drawing tools and PowerPoint are NOT recommended since they do not produce high-quality printable art.
+                                        </li>
+                                        <li>
+                                            Either use CorelDraw or Adobe Photoshop to produce acceptable art of high resolution,
+                                            Ask us for the artwork - we would be happy to help. We have specialist artists for adding illustrations and creating fantastic artworks for your book.
+                                        </li>
+                                    </ul> 
+                                </div>
+								<div class="text">
+                                    <span>17</span>
+                                    <p>Always keep a copy of the images with you which you send us.</p>
+                                </div>
+								<div class="text">
+                                    <span>18</span>
+                                    <p>If you have included images inside your manuscript, and if you want to give Captions for your images, please follow the guidelines mentioned below:</p>
+
+                                    <ul>
+                                        <li>
+                                            [Insert image01.jpg here]
+                                        </li>
+                                        <li>
+                                            [CAPTION] to be placed immediately below the directive to insert the image.
+                                        </li>
+                                    </ul>
+                                </div>
+								<div class="text">
+                                    <span>19</span>
+                                    <p>Check your e-mailbox at least once every day. We communicate primarily through email for approval of your Manuscript page-layout, cover design, illustrations, etc. We cannot proceed without your approval; delay in checking & approval on your side may cause delay in the publishing process.</p>
+                                </div>
+						
+                            </div>
+                            <div class="do-and-dont-body" x-bind:class="{active:!do_open}">
+                                <div class="text">
+                                    <span>1</span>
+                                    <p>Avoid “designing” your manuscript yourself. e.g., setting margins, paragraph / line spacing, indent, page breaks, section breaks, headers, footers, etc. Our layout design expert team will do that for you. If you attempt in designing your manuscript, it might result in double work for you and us - consuming more time. If you have any special formatting instructions, please send us an email with your instructions.</p>
+                                </div>
+                                <div class="text">
+                                    <span>2</span>
+                                    <p>Never embed images (if any) into your manuscript. Instead, mention a directive like this: [Insert image01.jpg here] at the proper place. Make sure you use the same name as the FILE NAME of the given image, otherwise we cannot relate it.</p>
+                                </div>
+                                <div class="text">
+                                    <span>3</span>
+                                    <p>Do not send us any low-resolution image for the purpose of printing (cover design, illustrations, etc.). If you want to send us images for any purpose please make sure that the image should have more than 300 dpi resolution.</p>
+                                </div>
+                                <div class="text">
+                                    <span>4</span>
+                                    <p>In case you send your own cover design, please make sure you own the copyright of the photo(s) or artwork used on the cover, or use copyright-free images. If someone else owns the copyright of the images used on the cover, please send us the permission of the copyright holder of the cover images in writing. The same applies for photos or images used inside the book. It may be noted that images freely available on the internet are not free to use - someone or the other owns copyright of these images. It is advisable to use photos either clicked by you, or drawn by your paid artist, or purchased from stockphoto sites, or downloaded from copyright-free stockphoto websites.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- Footer-section -->
+<footer class="footer-sec">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md">
+                <div class="footer-widget">
+                    <h5 class="footer-widget-title">Book Publishing</h5>
+                    <div class="menu-book-publishing-container">
+                        <ul>
+                            <li><a href="#">Story Book Publishing</a></li>
+                            <li ><a href="#">Historical Book Publishing</a></li>
+                            <li><a href="#">Ebook Publishing</a></li>
+                            <li><a href="#">Book publishers in India</a></li>
+                            <li><a href="#">Novel Publishers in India</a></li>
+                            <li><a href="#">Editing &amp; Proofreading</a></li>
+                            <li><a href="#">Children's Book Publishing</a></li>
+                            <li><a href="#">Book Translation</a></li>
+                            <li><a href="#">Screenplay To Novel</a></li>
+                            <li><a href="#">Book Promotion</a></li>
+                            <li><a href="#">Book Distribution</a></li>
+                            <li><a href="#">Typesetting</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-12 col-sm-6 col-md">
+                <div class="footer-widget">
+                    <h5 class="footer-widget-title">Writing &amp; Marketing</h5>
+                    <div class="menu-writing-marketing-container">
+                        <ul>
+                            <li><a href="#">Partial Rewriting</a></li>
+                            <li><a href="#">Ghost Writing</a></li>
+                            <li><a href="#">SEO Content Writing</a></li>
+                            <li><a href="#">Film Story Writing</a></li>
+                            <li><a href="#">School Book Writing</a></li>
+                            <li><a href="#">Script Writing</a></li>
+                            <li><a href="#">Biography Writing</a></li>
+                            <li><a href="#">Author's Website Development</a></li>
+                            <li><a href="#">Book Launch Event</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md">
+                <div class="footer-widget">
+                    <h5 class="footer-widget-title">MEDIA</h5>
+                    <div class="menu-media-container">
+                        <ul>
+                            <li><a href="#">Video Book Trailer</a></li>
+                            <li><a href="#">Audio Book Publishing</a></li>
+                            <li><a href="#">Book To Screenplay</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h5 class="footer-widget-title">Designing</h5>
+                    <div class="menu-designing-container">
+                        <ul>
+                            <li><a href="#">Book Cover Design</a></li>
+                            <li><a href="#">Book Layout Design</a></li>
+                            <li><a href="#">Book Illustration</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md">
+                <div class="footer-widget">
+                    <h5 class="footer-widget-title">Our Company</h5>
+                    <div class="menu-company-container">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Packages</a></li>
+                            <li><a href="#">Author's Checklist</a></li>
+                            <li><a href="#">Publish Now</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund and Cancellation Policy</a></li>
+                            <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md">
+                <div class="footer-widget">
+                    <h5 class="footer-widget-title">Contact Us</h5>
+                    <div class="textwidget">
+                        <p><a href="https://goo.gl/maps/o2JB3Wy2KHr" target="_blank" rel="nofollow noopener noreferrer">GROUND FLOOR, 98, 37-A, Gopal Lal Tagore Rd, Sarat Kanan Pally, Nainan Para, Baranagar, Kolkata, West Bengal 700036</a></p>
+                        <p><a href="mailto:contact@orange-publishers.com">contact@orange-publishers.com</a></p>
+                    </div>
+                </div>
+                <div class="widget_text footer-widget">
+                    <h5 class="footer-widget-title">Find Us On Google</h5>
+                    <div class="textwidget custom-html-widget">
+                        <div class="footer-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14729.752708102193!2d88.3735158!3d22.6374459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13acb909ad4e13ce!2sOrange%20Publishers%20-%20Self%20Book%20Publishing%20company%20in%20Kolkata!5e0!3m2!1sen!2sin!4v1572277550191!5m2!1sen!2sin" width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copy-right">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright-text">Designed, Developed &amp; Marketed By <a href="https://thinktoshare.com/">Think To Share</a> | <a href="https://orange-publishers.com/site-map/">Sitemap</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+</footer>
+<!-- end footer section -->
+    <script src="./dist/js/app.js"></script>
+</body>
+</html>

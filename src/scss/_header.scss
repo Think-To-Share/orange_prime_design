@@ -82,6 +82,7 @@
                         text-transform: uppercase;
                         padding: 10px 10px;
                         transition: all 0.3s ease-in-out;
+                        outline: none;
                         &:hover {
                             color: $primary-color;
                         }
@@ -113,6 +114,7 @@
                                 font-size: 1.1em; 
                                 transition: background-color 0.2s ease-in-out;
                                 white-space: nowrap;
+                                outline: none;
                                 &:hover {
                                     background-color: rgb(122, 122, 122);
                                     color: #fff;   
