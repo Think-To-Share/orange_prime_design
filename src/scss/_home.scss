@@ -1,3 +1,101 @@
+// popup
+.share-details {
+    position: fixed;
+    z-index: 1000;
+    top: 200px;
+    right: 0;
+    padding: 15px;
+    background: #f9f9f9;
+    box-shadow: grey 0px 0px 5px;
+    border-radius: 2px;
+    a{
+        color: $primary-color;
+        outline: none;
+    }
+   
+}
+.orangemodalform{
+    .modal-content{
+        @media (min-width: 768px){
+            width: 100%;
+        }
+        .modal-header{
+            .modal-title{
+                color: #000;
+                font-family: $primary-font;
+                font-size: 1em;
+            }
+        }
+        .modal-body{
+            form{
+                input::placeholder {
+                    color: $primary-color;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                }
+                input:not(input[type='file']),
+                textarea {
+                    width: 100%;
+                    border: none;
+                    border: 2px solid $primary-color;
+                    outline: none;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    padding: 15px 10px;
+                }
+                textarea::placeholder {
+                    color: $primary-color;
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                }
+                .btn-container{
+                    button {
+                        background: $primary-color;
+                        outline: none;
+                        border: none;
+                        display: inline-block;
+                        padding: 5px 15px;
+                        font-family: $primary-font;
+                        font-weight: 700;
+                        text-align: center;
+                        color: #fff;
+                        margin-bottom: 0;
+                        width: 40%;
+                        border-radius: 5px;
+                        margin-top: 23px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+#totop{
+    position: fixed;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $primary-color;
+    text-align: center;
+    line-height: 1;
+    padding: 10px;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 1px rgb(0 0 0 / 30%);
+    z-index: 9999;
+    svg{
+        fill: $primary-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 20px;
+        width: 20px;
+    }
+}
+
 // banner section start
 .orange-banner-section{
     // background:  radial-gradient(ellipse at center, rgba(251,152,47,1) 0%,rgba(247,91,23,1) 100%);
@@ -28,7 +126,7 @@
         .orange-book-name{
             font-family: $secondary-font;
             font-weight: 700;
-            @include font-size(4.1rem);
+            @include font-size(3.2rem);
             color: #f5f5f5;
             text-shadow: -5px -3px 10px #c82500;
         }
@@ -86,7 +184,7 @@
         .book-img{
             width: 59%;
             @media (min-width: 1200px){
-                width: 63%;
+                width: 55%;
             }
         }
         display: none;
@@ -98,6 +196,16 @@
 
 // orange-second-hero-section
 .orange-second-hero-section{
+    .orange-second-hero-heading{
+        text-align: center;
+        font-family: $secondary-font;
+        font-weight: 700;
+        @include font-size(2.3rem);
+        color: $secondary-color;
+        margin-top: 44px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
     .tns-outer {
         position: relative;
         .tns-nav {
@@ -170,7 +278,7 @@
             font-weight: 700;
             color: $secondary-color;
             text-align: center;
-            @include font-size(3.2rem);
+            @include font-size(2rem);
             letter-spacing: 3px;
             margin-top: 20px;
             text-transform: uppercase;
@@ -183,7 +291,7 @@
             font-weight: 500;
             color: $primary-color;
             text-align: center;
-            @include font-size(1.7rem);
+            @include font-size(1.3rem);
             letter-spacing: 2px;
             padding-bottom: 20px;
         }
@@ -191,7 +299,7 @@
             color: #010101;
             font-family: $primary-font;
             font-weight: 500;
-           @include font-size(1.1rem);
+           @include font-size(1rem);
             text-align: center;
             line-height: 2;
             @media (min-width:992px){
@@ -362,6 +470,22 @@
     @media (min-width:768px){
         padding: 43px 0; 
     }
+    .award-book-heading{
+        text-align: center;
+        font-family: $secondary-font;
+        font-weight: 700;
+        color: #1e293b;
+        @include font-size(2.2rem); 
+        padding-bottom: 20px;   
+    }
+    .bestseller-book-heading{
+        text-align: center;
+        font-family: $secondary-font;
+        font-weight: 700;
+        color: #1e293b;
+        @include font-size(2.2rem);
+        padding-top: 35px;
+    }
     .tns-outer {
         position: relative;
         .tns-nav {
@@ -406,19 +530,10 @@
                         justify-content: flex-start;
                     }
                 .award-book-img{
+                    box-shadow:0px -6px 12px 2px #00000057;
                     width: 55%;
                 }
                 .award-book-main{
-                    .award-book-heading{
-                        text-align: center;
-                        font-family: $secondary-font;
-                        font-weight: 700;
-                        color: #1e293b;
-                        @include font-size(2.2rem);
-                        margin-bottom: 27px;
-                        margin-top: 8px;
-                        
-                    }
                     .award-book-second-img{
                         width: 100%;
                         margin-bottom: 23px;
@@ -429,7 +544,7 @@
                     }
                     .award-book-contain{
                         background-color: change-color($color: $primary-color, $alpha: 0.16);;
-                        @include padding(1.1rem);
+                        @include padding(2.2rem);
                         border-left:8px solid $primary-color;
                         border-bottom: 8px solid $primary-color;
                         filter: drop-shadow(0 10px 8px rgb(0 0 0/0.04)) drop-shadow(0 4px 3px rgb(0 0 0/0.1));

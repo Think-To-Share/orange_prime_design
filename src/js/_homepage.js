@@ -125,3 +125,25 @@ if (document.querySelector('.shop-our-section')) {
     })
 }
 
+//Get the button
+let totop = document.querySelector("#totop");
+
+// When the user scrolls down 30px from the top of the document, show the button
+window.onscroll = () =>{scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    totop.style.display = "block";
+  } else {
+    totop.style.display = "none";
+  }
+}
+
+window.addEventListener('load', () => {
+    document.querySelector('#totop').addEventListener('click',(e) => {
+        e.preventDefault();
+
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    })
+})
