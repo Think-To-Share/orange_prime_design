@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     padding-top: 57px;
     position: relative;
-   overflow: hidden;
+    overflow: hidden;
     .orange-banner-text{
         width: 100%;
         text-align: center;
@@ -22,32 +22,26 @@
             color: #7a2601;
             font-family: $primary-font;
             font-weight: 700;
-            font-size: 2em;
+            @include font-size(2rem);
             margin-bottom: 20px;
         }
         .orange-book-name{
             font-family: $secondary-font;
             font-weight: 700;
-            font-size: 4em;
+            @include font-size(4.1rem);
             color: #f5f5f5;
             text-shadow: -5px -3px 10px #c82500;
-            // @media (min-width: 992px){
-            //     font-size: 4em;
-            // }
-            @media (min-width: 1200px){
-                font-size: 5em;
-            }
         }
         .orange-book-discount-text{
             font-family: $primary-font;
             font-weight: 400;
             color: #030303;
-            font-size: 1.9em;
+            @include font-size(1.9rem);
             text-shadow: -1px -2px 3px #8b2d02;
             font-style: italic;
             margin-bottom: 110px;
             span:first-child{
-                font-size: 1.7em;
+                @include font-size(1.7rem);
                 text-shadow: -1px -4px 3px #8b2d02;
             }
             span:nth-child(2){
@@ -63,7 +57,7 @@
                 text-align: center;
                 color: #ffffff;
                 background-color: #000;
-                font-size: 1.5em;
+                @include font-size(1.5rem);
                 padding: 6px 29px;
                 display: inline-block;
                 font-family: $primary-font;
@@ -176,13 +170,10 @@
             font-weight: 700;
             color: $secondary-color;
             text-align: center;
-            font-size: 2.3em;
+            @include font-size(3.2rem);
             letter-spacing: 3px;
             margin-top: 20px;
             text-transform: uppercase;
-            @media (min-width: 992px){
-                font-size: 3.8em;   
-            }
             @media (min-width: 768px){
                 margin-top: 0; 
             }
@@ -192,23 +183,19 @@
             font-weight: 500;
             color: $primary-color;
             text-align: center;
-            font-size: 1.3em;
+            @include font-size(1.7rem);
             letter-spacing: 2px;
             padding-bottom: 20px;
-            @media (min-width: 992px){
-                font-size: 1.9em;
-            }
         }
         .about-us-text{
             color: #010101;
             font-family: $primary-font;
             font-weight: 500;
-            font-size: 1em;
+           @include font-size(1.1rem);
             text-align: center;
             line-height: 2;
             @media (min-width:992px){
                 text-align: left;
-                font-size: 1.2em;
             }
         }
         .about-btn-container{
@@ -224,7 +211,7 @@
                 text-align: center;
                 color: #ffffff;
                 background-color: $primary-color;
-                font-size: 1.5em;
+                @include font-size(1.3rem);
                 padding: 6px 29px;
                 display: inline-block;
                 font-family: $primary-font;
@@ -256,7 +243,7 @@
         text-align: center;
         font-family: $secondary-font;
         font-weight: 700;
-        font-size: 2.5em;
+        @include font-size(2.3rem);
         color: $secondary-color;
         margin-bottom: 56px;
     }
@@ -291,7 +278,7 @@
                     color: #fff;
                     i{
                         color: #ffffff;
-                        font-size: 1.5em;
+                        @include font-size(1.3rem);
                         display: block;
                         position: absolute;
                         top: 50%;
@@ -335,7 +322,7 @@
                         .author-name-para-text{
                           font-family: $primary-font; 
                           font-weight: 500;
-                          font-size: 1.5em; 
+                          @include font-size(1.3rem);
                           text-align: center;
                           color: #fefefe;
                           margin: 0;
@@ -427,12 +414,9 @@
                         font-family: $secondary-font;
                         font-weight: 700;
                         color: #1e293b;
-                        font-size: 1.5em;
+                        @include font-size(2.2rem);
                         margin-bottom: 27px;
                         margin-top: 8px;
-                        @media (min-width:992px){
-                            font-size: 2.5em; 
-                        }
                         
                     }
                     .award-book-second-img{
@@ -445,7 +429,7 @@
                     }
                     .award-book-contain{
                         background-color: change-color($color: $primary-color, $alpha: 0.16);;
-                        padding: 20px;
+                        @include padding(1.1rem);
                         border-left:8px solid $primary-color;
                         border-bottom: 8px solid $primary-color;
                         filter: drop-shadow(0 10px 8px rgb(0 0 0/0.04)) drop-shadow(0 4px 3px rgb(0 0 0/0.1));
@@ -458,19 +442,115 @@
                             text-align: center;
                             font-family: $primary-font;
                             font-weight: 500;
-                            font-size: 1em; 
-                            @media (min-width:992px){
-                                font-size: 1.4em;
-                            }
-                        
+                            @include font-size(1.2rem); 
                         }
-                    
                     }  
                 }
             }
         }
     }
     
+}
+
+// SHOP OUR LATEST COLLECTION section start
+.shop-our-section{
+    .shop-our-heading{
+        text-align: center;
+        font-family: $secondary-font;
+        font-weight: 700;
+        color: #1e293b;
+        @include font-size(2rem);
+        margin-top: 8px;
+    }
+    .shop-our-heading-text{
+        text-align: center;
+        font-family: $secondary-font;
+        font-weight: 400;
+        color: $primary-color;
+        @include font-size(1.1rem);
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+    .slider-container {
+        position: relative;
+        padding: 0;
+        @media (min-width:768px) {
+            padding: 2rem 5rem;
+        }
+        .tns-outer{
+            .tns-controls{
+                    position: absolute;
+                    z-index: 3;
+                    transform: translate(-50% ,-50%);
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    left: 50%;
+                    pointer-events:none;
+                button{
+                    background: none;
+                    pointer-events: all;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    box-shadow: none;
+                    outline: none;
+                    position: relative;
+                    border: none;
+                    background: #c9c9c9;
+                    color: #fff;
+                    i{
+                        color: #ffffff;
+                        @include font-size(1.5rem);
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+            }
+        }
+
+        .slides {
+            .slide {
+                .shop-our-collection {
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .gallery-btn-container{
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .gallery-btn{
+            text-decoration: none;
+            text-align: center;
+            color: $primary-color;
+            @include font-size(1rem);
+            @include padding-top(0.9rem);
+            @include padding-right(1.8rem);
+            @include padding-bottom(0.9rem);
+            @include padding-left(1.8rem);
+            background-color: transparent;
+            display: inline-block;
+            font-family: $primary-font;
+            font-weight: 500;
+            border-radius: 15px;
+            border:4px solid $primary-color;
+            transition: all 0.3s ease-in-out;
+            text-transform: uppercase;
+            &:hover{
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+    }
 }
 
 // contact us
@@ -485,11 +565,8 @@
             font-family: $secondary-font;
             font-weight: 400;
             font-style: italic;
-            font-size: 1.7em;
+            @include font-size(3rem);
             color: #ffffff;
-            @media (min-width: 768px){
-                font-size: 3.1em;
-            }
         }
         .contact-second-text{
             margin: 0;
@@ -498,31 +575,9 @@
             font-family: $secondary-font;
             font-weight: 400;
             font-style: italic;
-            font-size: 1.7em;
+            @include font-size(3rem);
             color: #ffffff;
-            @media (min-width: 768px){
-                font-size: 3.1em;
-            }
         }
-        // a{
-        //     text-decoration: none;
-        //     .contact-us{
-        //         color: #fad1ac;
-        //         font-family: $primary-font;
-        //         font-weight: 700;
-        //         font-size: 1.5em;
-        //         text-align: center;
-        //         padding: 10px 0 8px 0;
-        //         text-shadow: 1px 4px 3px #8b2d02c7;
-        //         transition: all 0.3s ease-in-out;
-        //         &:hover{
-        //             text-shadow: 1px 2px 3px #8b2d02;
-        //         }
-        //         @media (min-width: 768px){
-        //             font-size: 2em;
-        //         }
-        //     }
-        // }
         .contact-us-btn-container{
             text-align: center;
             width: 100%;
@@ -532,7 +587,7 @@
                 text-decoration: none;
                 text-align: center;
                 color: #ffffff;
-                font-size: 1.5em;
+                @include font-size(1.3rem);
                 padding: 6px 29px;
                 background-color: transparent;
                 display: inline-block;
@@ -615,24 +670,18 @@
                     .client-text{
                         font-family: $primary-font;
                         font-weight: 500;
-                        font-size: 1em;
+                       @include font-size(1.2rem);
                         color: #444443;
                         text-align: center;
                         letter-spacing: 2px;
                         margin: 0;
-                        @media (min-width: 768px){
-                            font-size: 1.4em;
-                        }
                         span{
                             color: #ec6828;
                             font-family: $primary-font;
                             font-weight: 700;
-                            font-size: 1.3em;
+                            @include font-size(1.3rem);
                             padding-top: 48px;
                             display: inline-block;
-                            @media (min-width: 768px){
-                                font-size: 1.5em;
-                            }
                         }
                     }
                 } 
@@ -661,7 +710,7 @@
         padding: 17px 0;
         font-weight: 900;
         text-transform: uppercase;
-        font-size: 1.4em;
+        @include font-size(1.4rem);
         color: #fa5600;
         display: none;
         @media (min-width: 1200px){
@@ -673,7 +722,7 @@
         .check-out-text{
             font-family: $secondary-font;
             font-weight: 400;
-            @include font-size(2.5rem);
+            @include font-size(2.2rem);
             font-style: italic;
             color: #fefdfd;
             text-align: center;
@@ -708,7 +757,7 @@
                 text-decoration: none;
                 text-align: center;
                 color: #ffffff;
-                font-size: 1.5em;
+                @include font-size(1.3rem);
                 padding: 6px 29px;
                 background-color: transparent;
                 display: inline-block;
@@ -738,12 +787,9 @@
         color: $secondary-color;
         font-family: $secondary-font;
         font-weight: 700;
-        font-size: 2em;
+        @include font-size(2.4rem);
         text-align: center;
         margin-bottom: 57px;
-        @media (min-width: 768px){
-            font-size: 2.6em;
-        }
     }
     .blog-text{
         .blog-link{
@@ -771,21 +817,21 @@
                        text-align: center;
                        font-family: $primary-font;
                        font-weight: 700;
-                       font-size: 1.6em; 
+                       @include font-size(1.6rem);
                        color: $primary-color;
                     }
                     .card-date{
                         text-align: center;
                         font-family: $primary-font;
                         font-weight: 400;
-                        font-size: 1.1em; 
+                        @include font-size(1.1rem);
                         color: $secondary-color;
                     }
                     .card-text{
                         text-align: left;
                         font-family: $primary-font;
                         font-weight: 400;
-                        font-size: 1em; 
+                       @include font-size(1rem); 
                         color: #000000;
                     }
                 }
@@ -806,7 +852,7 @@
             text-align: center;
             color: #ffffff;
             background-color: $primary-color;
-            font-size: 1.5em;
+            @include font-size(1.5rem);
             padding: 6px 29px;
             display: inline-block;
             font-family: $primary-font;
@@ -831,11 +877,8 @@
         }
         a{
             i{
-                font-size: 1.8em;
+                @include font-size(4rem);
                 color: #030303;
-                @media (min-width: 768px){
-                    font-size: 4em;
-                }
                 
             }
             .fa-instagram{

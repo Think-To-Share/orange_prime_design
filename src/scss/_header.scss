@@ -18,7 +18,7 @@
                     padding-right: 50px;
                     font-family: $primary-font;
                     font-weight: 500;
-                    font-size: 0.9em;
+                    @include font-size(0.9rem);
                     color: #969494;
                     padding: 8px 10px;
                     border: 1px solid #000;
@@ -43,7 +43,7 @@
                 color: #ffffff;
                 font-family: $primary-font;
                 font-weight: 600;
-                font-size: 1em;
+                @include font-size(1rem);
                 background-color: $primary-color;
                 display: inline-block;
                 white-space: nowrap;
@@ -78,7 +78,7 @@
                         color: #ffffff;
                         font-family: $primary-font;
                         font-weight: 600;
-                        font-size: 1.1em;
+                        @include font-size(1.1rem);
                         text-transform: uppercase;
                         padding: 10px 10px;
                         transition: all 0.3s ease-in-out;
@@ -111,7 +111,7 @@
                                 font-family: $primary-font;
                                 font-weight: 400;
                                 text-transform: uppercase;
-                                font-size: 1.1em; 
+                                @include font-size(1.1rem);
                                 transition: background-color 0.2s ease-in-out;
                                 white-space: nowrap;
                                 outline: none;
@@ -154,7 +154,7 @@
                 color: #ffffff;
                 font-family: $primary-font;
                 font-weight: 600;
-                font-size: 1em;
+                @include font-size(1rem);
                 background-color: $primary-color;
                 display: none;
                 white-space: nowrap;

@@ -91,3 +91,37 @@ if (document.querySelector('.award-book-section')) {
         autoplayButtonOutput: false,
     })
 }
+
+if (document.querySelector('.shop-our-section')) {
+    const slider = tns({
+        container: '.shop-our-section .slides',
+        items: 2,
+        nav: false,
+        gutter:30,
+        center: true,
+        autoplay: true,
+        controls:false,
+        autoplayTimeout:3000,
+        autoplayButtonOutput: false,
+        controlsText:['<i class="fas fa-chevron-left"></i>' , '<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            768:{
+                items: 3,
+            },
+            1200:{
+            items: 5,
+            controls:true,
+            },
+        }
+    })
+
+    slider.events.on('indexChanged', (info) => {
+        document.querySelectorAll('.shop-our-section .slides .slide .shop-our-collection').forEach(slide => {
+            slide.style.height = 'auto'
+        });
+
+        const activeSlide = info.slideItems[info.index];
+        activeSlide.querySelector('.shop-our-collection').style.height = '330px'
+    })
+}
+
