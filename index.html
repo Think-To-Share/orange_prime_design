@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orange_prime</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./dist/css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <header class="orange-header-menu"> 
     <div class="container">
@@ -169,19 +171,22 @@
                 <div class="row">
                     <div class="col-12 col-md-6 order-1 order-md-0">
                         <div class="about-us-main">
-                                <h2 class="about-us-heading">ABOUT US</h2>
-                                <p class="about-us-heading-bottom-text">Publishing House</p>
-                                <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore 
-                                    magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                                    Risus commodo viverra maecenas accumsan facilisis.</p>
-                                <div class="about-btn-container">
-                                    <a href="#" class="about-btn">View More</a>
-                                </div>           
+                            <h2 class="about-us-heading">ABOUT US</h2>
+                            <p class="about-us-heading-bottom-text">Publishing House</p>
+                            <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore 
+                                magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                                Risus commodo viverra maecenas accumsan facilisis.</p>
+                            <div class="about-btn-container">
+                                <a href="#" class="about-btn">View More</a>
+                            </div>          
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <img src="./src/images/about_us.jpg" alt="" class="about-img">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="./src/images/about-us-for-responsive.jpg" alt="" class="mobile-about-img">
                     </div>
                 </div>
             </div>
@@ -350,7 +355,7 @@
         <!-- award book section end -->
 
         <!-- SHOP OUR LATEST COLLECTION section start-->
-        <section class="shop-our-section">
+        <!-- <section class="shop-our-section">
                 <div class="container">
                     <h2 class="shop-our-heading">SHOP OUR LATEST COLLECTION</h2>
                     <p class="shop-our-heading-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod temporincididunt ut labore et<br>
@@ -368,7 +373,7 @@
                                 </div>
                             </div>
                             <div class="slide">
-                                <div class="shop-our-collection" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 330px;">
+                                <div class="shop-our-collection" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <a href="#"><img src="./src/images/shop_book_2.jpg" alt="" class="img-fluid"></a> 
                                 </div>
                             </div>
@@ -420,9 +425,32 @@
                 </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- SHOP OUR LATEST COLLECTION section End-->
 
+        <!-- SHOP OUR LATEST COLLECTION section start -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/images/shop_book.jpg" alt="orange latest book">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/shop_book_1.jpg" alt="orange latest book">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/shop_book_2.jpg" alt="orange latest book">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/shop_book_3.jpg" alt="orange latest book">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/images/shop_book_4.jpg" alt="orange latest book">
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        <!-- SHOP OUR LATEST COLLECTION section end -->
 
         <!-- Contact Us section start-->
         <section class="contact-us-section">
@@ -651,6 +679,7 @@
     </div>
 </section>
 <!-- story to share section end-->
+
 </main>
 <!-- social media section start -->
 <div class="social-media-section">
@@ -778,6 +807,25 @@
         </div>
 </footer>
 <!-- end footer section -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./dist/js/app.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView:5,
+          spaceBetween: 50,
+          centeredSlides:true,
+          grapCursor:true,
+          loop: true,
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //   },
+        });
+    </script>
 </body>
 </html>

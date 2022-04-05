@@ -98,7 +98,6 @@ if (document.querySelector('.shop-our-section')) {
         items: 2,
         nav: false,
         gutter:30,
-        center: true,
         autoplay: true,
         controls:false,
         autoplayTimeout:3000,
@@ -115,14 +114,14 @@ if (document.querySelector('.shop-our-section')) {
         }
     })
 
-    slider.events.on('indexChanged', (info) => {
-        document.querySelectorAll('.shop-our-section .slides .slide .shop-our-collection').forEach(slide => {
-            slide.style.height = 'auto'
-        });
+    // slider.events.on('indexChanged', (info) => {
+    //     document.querySelectorAll('.shop-our-section .slides .slide .shop-our-collection').forEach(slide => {
+    //         slide.style.height = 'auto'
+    //     });
 
-        const activeSlide = info.slideItems[info.index];
-        activeSlide.querySelector('.shop-our-collection').style.height = '330px'
-    })
+    //     const activeSlide = info.slideItems[info.index];
+    //     activeSlide.querySelector('.shop-our-collection').style.height = '330px'
+    // })
 }
 
 //Get the button
