@@ -51,6 +51,10 @@
                 i{
                     color: #ffffff;
                 }
+                a{
+                    color: #ffffff; 
+                    text-decoration: none;   
+                  }
                 @media (min-width: 1200px){
                     display: none;
                 }
@@ -150,8 +154,6 @@
             
             .number-text{
                 padding: 10px 20px;
-                text-decoration: none;
-                color: #ffffff;
                 font-family: $primary-font;
                 font-weight: 600;
                 @include font-size(1rem);
@@ -166,6 +168,10 @@
                 // }
                 @media (min-width: 1200px){
                     display: inline-block;
+                }
+                a{
+                  color: #ffffff; 
+                  text-decoration: none;   
                 }
             }
         }  
