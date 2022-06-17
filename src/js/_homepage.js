@@ -20,7 +20,7 @@ if (document.querySelector('.client-section')) {
         nav: true,
         autoplay: true,
         controls:false,
-        autoplayTimeout:3000,
+        autoplayTimeout:8000,
         autoplayButtonOutput: false,
     })
 }

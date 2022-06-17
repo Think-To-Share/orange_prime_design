@@ -126,7 +126,7 @@
         .orange-book-name{
             font-family: $secondary-font;
             font-weight: 700;
-            @include font-size(3.2rem);
+            @include font-size(6.2rem);
             color: #f5f5f5;
             text-shadow: -5px -3px 10px #c82500;
             padding-bottom: 40px;
@@ -576,6 +576,89 @@
         }
     }
     
+}
+
+//Contact Section
+.orange-homepage-contact{
+    background:  radial-gradient(ellipse at center, rgba(251,152,47,1) 0%,rgba(247,91,23,1) 100%);
+    box-shadow: inset 0px 0px 14px #00000057;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    .heading{
+        .publishing_now{
+            margin: 0;
+            padding: 10px 0 0 0;
+            text-align: center;
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-style: italic;
+            @include font-size(3rem);
+            color: #ffffff;
+            padding-bottom: 50px;
+        }
+    }
+    form {
+        width: 100%;
+
+        .form-container {
+            margin: 0 auto;
+
+            @media (min-width: 576px) {
+                padding: 0;
+            }
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
+                grid-gap: 15px;
+                justify-content: center;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                background: #fff;
+                padding: 10px 18px;
+                border-radius: 5px;
+                font-family: $primary_font;
+                font-weight: 400;
+                color: $secondary-color;
+                width: 100%;
+                margin-bottom: 15px;
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                }
+
+                &::placeholder {
+                    color: $secondary-color;
+                }
+            }
+
+            button, input[type=submit] {
+                border: none;
+                display: inline-block;
+                width: 100%;
+                background: #000;
+                color: #fff;
+                outline: none;
+                font-family: $primary_font;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 10px;
+                font-size: 0.8rem;
+                border-radius: 0;
+                transition: color .15s ease-in-out, background-color .15s ease-in-out;
+
+                &:hover {
+                    text-decoration: none;
+                    background: adjust-color($color: #000, $lightness: 20%);
+                }
+            }
+        }
+    }
 }
 
 // SHOP OUR LATEST COLLECTION section start

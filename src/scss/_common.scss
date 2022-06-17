@@ -8,5 +8,28 @@ body{
         text-align:left;
     }
 }
+.mobile-responsive{
+    .number-text{
+        text-decoration: none;
+        color: $primary-color;
+        font-family: $primary-font;
+        font-weight: 600;
+        @include font-size(1rem);
+        white-space: nowrap;
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        i{
+            color: $primary-color;
+        }
+        a{
+            color: $primary-color; 
+            text-decoration: none;   
+            }
+        @media (min-width: 768px){
+            display: none;
+        }
+    }
+}
 
 
