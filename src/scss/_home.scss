@@ -191,6 +191,20 @@
     }
 }
 
+// breaking news
+.breaking-news{
+    background-color: $primary-color;
+    margin-top: 10px;
+    .breaking-news-text{
+        text-align: center;
+        font-family: $primary-font;
+        font-weight: 700;
+        @include font-size(1.2rem);
+        color: #fff;
+    }
+}
+
+
 // orange-second-hero-section
 .orange-second-hero-section{
     .orange-second-hero-heading{
@@ -1157,3 +1171,4 @@
     }
     
 }
+

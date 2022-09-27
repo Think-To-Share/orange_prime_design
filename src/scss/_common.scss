@@ -32,4 +32,32 @@ body{
     }
 }
 
+.marquee {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: #fefefe;
+    color: #333;
+}
+
+.marquee p {
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: scroll-left 20s linear infinite;
+    white-space: nowrap;
+    inline-size: min-content;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
